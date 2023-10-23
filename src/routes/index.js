@@ -1,14 +1,17 @@
 const SEO = {
-	title: 'Open Graph Article Title',
-	noindex: false,
+	title: 'Vortex West',
+	noindex: true,
 	nofollow: false,
 	description: 'Description of open graph article',
-	base: 'https://vortexwe.com',
-	keywords: ['svelte', 'sveltekit', 'web'],
+	base: 'https://vortexwest.com',
+	keywords: ['software development', 'software engineering', 'web'],
 	applicationName: 'Vortex West',
 	canonical: 'https://www.vortexwe.com',
-	themeColor: 'red',
-	manifest: '%sveltekit.assets%/favicons/site.manifest',
+	themeColor: 'blue',
+	nositelinkssearchbox: false,
+	notranslate: false,
+	amp: 'https://www.example.com/url/to/amp/document.html',
+	manifest: '/manifest.json',
 
 	/**@type {import("../lib/types").SvelteSeo['twitter']}*/
 	twitter: {
@@ -17,23 +20,7 @@ const SEO = {
 		image: 'https://image.com',
 		imageAlt: 'image Alt',
 		card: 'app',
-		site: '@svelteseo',
-		creator: '@artiebits',
-		player: 'https://wakey.io/embed/26',
-		playerWidth: '720',
-		playerHeight: '720',
-		playerStream: 'https://wakey.io/public/vid/26.mp4',
-		appNameIphone: 'Svelte SEO',
-		appIdIphone: '23232',
-		appUrlIphone: 'applenews://',
-		appNameIpad: 'Svelte SEO',
-		appIdGoogleplay: 'svelte.seo.com',
-		appNameGoogleplay: 'Svelte SEO',
-		appUrlGoogleplay: 'https://play.google.com/store/apps/details?id=com.sega.sonicdash'
-	},
-
-	facebook: {
-		appId: '12344567'
+		site: '@svelteseo'
 	},
 
 	/**@type {import("../lib/types").OpenGraph} */
@@ -42,7 +29,7 @@ const SEO = {
 		type: 'website',
 		url: 'https://www.example.com',
 		description: 'Description of open graph article',
-		site_name: 'Vortex West',
+		site_name: 'Svelte SEO',
 		images: [
 			{
 				url: 'http://www.example.image',
@@ -60,7 +47,26 @@ const SEO = {
 				width: 500,
 				height: 500
 			}
-		]
+		],
+
+		article: {
+			published_time: '2020-08-03T17:31:37Z',
+			modified_time: '2020-08-20T09:31:37Z',
+			expiration_time: '2025-12-21T17:31:37Z',
+			section: 'Section II',
+			author: [
+				'https://www.example.com/authors/@firstnameA-lastnameA',
+				'https://www.example.com/authors/@firstnameB-lastnameB'
+			],
+			tag: ['Tag A', 'Tag B', 'Tag C']
+		},
+
+		profile: {
+			first_name: 'John',
+			last_name: 'Doe',
+			username: 'johndoe',
+			gender: 'male'
+		}
 	}
 };
 
