@@ -10,12 +10,8 @@
   base={SEO.base}
   applicationName={SEO.applicationName}
   themeColor={SEO.themeColor}
-  nositelinkssearchbox={SEO.nositelinkssearchbox}
-  notranslate={SEO.notranslate}
   canonical={SEO.canonical}
-  amp={SEO.amp}
   manifest={SEO.manifest}
-  languageAlternates={SEO.languageAlternates}
   twitter={SEO.twitter}
   openGraph={SEO.openGraph}
   jsonLd={{
@@ -46,7 +42,6 @@
     },
   }}
 />
-
 
 <section class="py-24 md:py-24 bg-coolGray-50">
   <div class="container mx-auto px-4">
