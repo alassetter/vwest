@@ -2,7 +2,8 @@ const SEO = {
 	title: 'Vortex West',
 	noindex: true,
 	nofollow: false,
-	description: 'Description of open graph article',
+	description:
+		'Vortex West is a software development company. Providing enterprise and startups companies with software and engineering solutions from experienced developers.',
 	base: 'https://vortexwest.com',
 	keywords: ['software development', 'software engineering', 'web'],
 	applicationName: 'Vortex West',
@@ -15,20 +16,22 @@ const SEO = {
 
 	/**@type {import("../lib/types").SvelteSeo['twitter']}*/
 	twitter: {
-		title: 'Open Graph Article Title',
-		description: 'Description of open graph article',
+		title: 'Vortex West',
+		description:
+			'Vortex West is a software development company. Providing enterprise and startups companies with software and engineering solutions from experienced developers.',
 		image: 'https://image.com',
 		imageAlt: 'image Alt',
 		card: 'app',
-		site: '@svelteseo'
+		site: '@vortexwe'
 	},
 
 	/**@type {import("../lib/types").OpenGraph} */
 	openGraph: {
-		title: 'Open Graph Article Title',
+		title: 'Vortex West',
 		type: 'website',
-		url: 'https://www.example.com',
-		description: 'Description of open graph article',
+		url: 'https://www.vortexwe.com',
+		description:
+			'Vortex West is a software development company. Providing enterprise and startups companies with software and engineering solutions from experienced developers.',
 		site_name: 'Svelte SEO',
 		images: [
 			{
