@@ -5,8 +5,8 @@ const SEO = {
 	description: 'Description of open graph article',
 	base: 'https://www.example.com',
 	keywords: ['svelte', 'sveltekit', 'web'],
-	applicationName: 'Svelte SEO',
-	canonical: 'https://www.example.com',
+	applicationName: 'Vortex West',
+	canonical: 'https://vortexwe.com',
 	themeColor: 'red',
 	nositelinkssearchbox: true,
 	notranslate: true,
@@ -61,7 +61,7 @@ const SEO = {
 		determiner: 'the',
 		locale: 'en_US',
 		localeAlternate: ['fr_FR', 'es_ES'],
-		site_name: 'Svelte SEO',
+		site_name: 'Vortex West',
 		videos: [
 			{
 				url: 'http://www.example.video',
