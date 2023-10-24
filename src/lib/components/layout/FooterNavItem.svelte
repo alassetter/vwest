@@ -11,6 +11,6 @@
 		class:active={isCurrentPage}
 		aria-current={isCurrentPage ? 'page' : undefined}
 	>
-  <slot />
+		<slot />
 	</a>
 </li>

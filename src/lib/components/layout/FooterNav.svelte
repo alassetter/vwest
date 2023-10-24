@@ -1,8 +1,7 @@
 <script>
-  import { navItems } from '$lib/config';
+	import { navItems } from '$lib/config';
+	import { footerItems } from '$lib/config';
 	import FooterNavItem from '$lib/components/layout/FooterNavItem.svelte';
-
-
 	// Social Links
 	const socialLinks = [
 		{ title: 'LinkedIn', href: 'https://linkedin.com' },
@@ -17,17 +16,21 @@
 		<li>
 			<div class="font-display text-sm font-semibold tracking-wider text-neutral-950">Work</div>
 			<ul role="list" class="mt-4 text-sm text-neutral-700">
-        {#each navItems as page}
-        <FooterNavItem class="transition hover:text-neutral-950" href={page.route}>
-          {page.title}
-        </FooterNavItem>
-      {/each}
+				{#each footerItems as page}
+					<FooterNavItem class="transition hover:text-neutral-950" href={page.route}>
+						{page.title}
+					</FooterNavItem>
+				{/each}
 			</ul>
 		</li>
 		<li>
 			<div class="font-display text-sm font-semibold tracking-wider text-neutral-950">Company</div>
 			<ul role="list" class="mt-4 text-sm text-neutral-700">
-				<FooterNavItem />
+				{#each navItems as page}
+					<FooterNavItem class="transition hover:text-neutral-950" href={page.route}>
+						{page.title}
+					</FooterNavItem>
+				{/each}
 			</ul>
 		</li>
 		<li>

@@ -22,6 +22,29 @@ export const navItems = [
 	}
 ];
 
+export const footerItems = [
+	{
+		title: 'Case Study Title',
+		route: '/'
+	},
+	{
+		title: 'Case Study Title',
+		route: '/'
+	},
+	{
+		title: 'Case Study Title',
+		route: '/'
+	},
+	{
+		title: 'Case Study Title',
+		route: '/'
+	},
+	{
+		title: 'Case Study Title',
+		route: '/'
+	}
+];
+
 export const legalNavItems = [
 	{
 		title: 'Privacy Policy',
