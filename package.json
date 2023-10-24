@@ -9,8 +9,7 @@
 				"lint": "prettier --plugin-search-dir . --check .",
 				"format": "prettier --plugin-search-dir . --write .",
 				"component": "hygen new component",
-				"page": "hygen new page",
-        "svelte-check": "svelte-check"
+				"page": "hygen new page"
 		},
 		"devDependencies": {
 				"@sveltejs/adapter-auto": "^2.0.0",
@@ -30,7 +29,6 @@
 		"type": "module",
 		"dependencies": {
 				"@sveltejs/adapter-vercel": "^3.0.3",
-				"schema-dts": "^1.1.2",
-				"svelte-check": "^3.5.2"
+				"schema-dts": "^1.1.2"
 		}
 }
