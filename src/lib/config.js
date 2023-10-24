@@ -1,46 +1,42 @@
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
 	{
-		title: 'About',
-		route: '/about'
-	},
-	{
-		title: 'Contact',
-		route: '/contact'
-	},
-	{
-		title: 'Insights',
-		route: '/insights'
-	},
-	{
 		title: 'Services',
 		route: '/services'
 	},
 	{
 		title: 'Work',
 		route: '/work'
+	},
+	{
+		title: 'About',
+		route: '/about'
+	},
+	{
+		title: 'Insights',
+		route: '/insights'
+	},
+	{
+		title: 'Contact',
+		route: '/contact'
 	}
 ];
 
 export const footerItems = [
 	{
-		title: 'Case Study Title',
+		title: 'Software/Web Development',
 		route: '/'
 	},
 	{
-		title: 'Case Study Title',
+		title: 'Devops',
 		route: '/'
 	},
 	{
-		title: 'Case Study Title',
+		title: 'UI/UX Design',
 		route: '/'
 	},
 	{
-		title: 'Case Study Title',
-		route: '/'
-	},
-	{
-		title: 'Case Study Title',
+		title: 'Blockchain',
 		route: '/'
 	}
 ];
