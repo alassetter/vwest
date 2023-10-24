@@ -14,7 +14,7 @@
 <nav>
 	<ul role="list" class="grid grid-cols-2 gap-8 sm:grid-cols-3">
 		<li>
-			<div class="font-display text-sm font-semibold tracking-wider text-neutral-950">Work</div>
+			<div class="font-display text-sm font-semibold tracking-wider text-neutral-950">Services</div>
 			<ul role="list" class="mt-4 text-sm text-neutral-700">
 				{#each footerItems as page}
 					<FooterNavItem class="transition hover:text-neutral-950" href={page.route}>
