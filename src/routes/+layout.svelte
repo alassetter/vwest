@@ -46,6 +46,5 @@
 			<slot />
 		</div>
 	</main>
-  <Footer />
+	<Footer />
 {/key}
-
