@@ -24,7 +24,7 @@ export const navItems = [
 
 export const footerItems = [
 	{
-		title: 'Software/Web Development',
+		title: 'Development',
 		route: '/'
 	},
 	{
