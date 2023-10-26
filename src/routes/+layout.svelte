@@ -1,5 +1,6 @@
 <script>
 	import '../app.postcss';
+  import ViewPort from '$lib/components/utility/ViewPort.svelte';
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import { currentPage } from '$lib/assets/js/store';
@@ -7,6 +8,7 @@
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+
 	export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
@@ -36,15 +38,16 @@
 
 {#key data.path}
 	<main
-		class="w-full flex-auto bg-slate-400"
+		class="w-full flex-auto"
 		id="main"
 		tabindex="-1"
 		in:fade={transitionIn}
 		out:fade={transitionOut}
 	>
-		<div class="mx-auto px-6 lg:px-8 mt-24 sm:mt-32 md:mt-56">
+		<div class="mx-auto">
 			<slot />
 		</div>
 	</main>
 	<Footer />
+  <ViewPort />
 {/key}
