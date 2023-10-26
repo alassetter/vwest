@@ -4,12 +4,12 @@
 	$: isCurrentPage = $currentPage.startsWith(href);
 </script>
 
-<li class="mt-4">
+<li class="mb-2">
 	<a
-		class="transition hover:text-neutral-950"
+		class="inline-block text-md tracking-wider text-gray-500 hover:text-gray-400 transition-all duration-150"
 		{href}
 		class:active={isCurrentPage}
-		aria-current={isCurrentPage ? 'page' : undefined}
+		aria-current={isCurrentPage ? 'page' : false}
 	>
 		<slot />
 	</a>
