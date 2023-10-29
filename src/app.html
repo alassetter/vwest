@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full text-base antialiased">
+<html lang="en" class="antialiased">
 
 <head>
   <meta charset="utf-8" />
@@ -17,20 +17,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <!-- End Google Fonts block -->
 
-  %sveltekit.head%
+  <!-- add inline style and blocking script to prevent content flash/jump -->
+  <style>
+    .ts-version {
+      display: none;
+    }
 
+    body.prefers-ts .js-version {
+      display: none;
+    }
+
+    body.prefers-ts .ts-version {
+      display: block;
+    }
+
+    .no-js .ts-toggle {
+      display: none;
+    }
+  </style>
   <script>
     // Calling this here so that it loads as quickly as possible
     // Avoiding a flash of light mode in case dark mode is used
     const theme = localStorage.getItem('theme-preference') || 'auto';
     document.firstElementChild?.setAttribute('data-theme', theme);
   </script>
+  
+  %sveltekit.head%
 </head>
 
-<body class="flex min-h-full flex-col">
+<body class="antialiased font-body bg-body text-body text-gray-900 bg-black">
   <div style="display: contents">%sveltekit.body%</div>
 </body>
 
