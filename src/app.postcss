@@ -5,6 +5,25 @@
 /* This will always be included in your compiled CSS */
 
 .active {color: blue;}
+.container--main 
+  {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+/* Smoothing for rescaling */
+section, h1, li, img {
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+
 
 @tailwind components;
 
