@@ -3,19 +3,24 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {
+    extend: {
 			aspectRatio: {
 				'4/3': '4 / 3',
 				'4/4': '4 / 4'
 			}
 		},
+    aspectRatio: {
+      auto: 'auto',
+      square: '1 / 1',
+      video: '16 / 9'
+    },
 		screens: {
 			xs: '480px',
 			sm: '640px',
 			md: '768px',
 			lg: '1024px',
 			xl: '1280px',
-			'2xl': '1370px'
+			'2xl': '1536px'
 		},
 		colors: {
 			current: 'currentColor',
@@ -32,9 +37,9 @@ const config = {
 				600: '#475569',
 				700: '#334155',
 				800: '#1e293b',
-				900: '#0f172a'
+				900: '#0f172a',
 			},
-			coolGray: {
+			neutral: {
 				50: '#F7F7F7',
 				100: '#EFEFEF',
 				200: '#E9E9E9',
@@ -44,7 +49,7 @@ const config = {
 				600: '#646464',
 				700: '#494949',
 				800: '#252525',
-				900: '#151515'
+				900: '#151515',
 			},
 			red: {
 				50: '#ffebeb',
@@ -56,7 +61,7 @@ const config = {
 				600: '#e53434',
 				700: '#b22828',
 				800: '#7f1d1d',
-				900: '#4c1111'
+				900: '#4c1111',
 			},
 			yellow: {
 				50: '#fffbeb',
@@ -68,7 +73,7 @@ const config = {
 				600: '#d97706',
 				700: '#b45309',
 				800: '#92400e',
-				900: '#78350f'
+				900: '#78350f',
 			},
 			green: {
 				50: '#e7f7ec',
@@ -80,7 +85,7 @@ const config = {
 				600: '#0e8f38',
 				700: '#0a6b2a',
 				800: '#07471c',
-				900: '#124226'
+				900: '#124226',
 			},
 			blue: {
 				50: '#e6ebfd',
@@ -92,19 +97,19 @@ const config = {
 				600: '#0735d7',
 				700: '#0529a7',
 				800: '#041d77',
-				900: '#021147'
+				900: '#021147',
 			}
 		},
 		spacing: {
 			px: '1px',
 			0: '0px',
-			0.5: '0.125rem',
-			1: '0.25rem',
-			1.5: '0.375rem',
-			2: '0.5rem',
-			2.5: '0.625rem',
-			3: '0.75rem',
-			3.5: '0.875rem',
+			0.5: '0.125rem', 
+			1: '0.25rem', 
+			1.5: '0.375rem', 
+			2: '0.5rem', 
+			2.5: '0.625rem', 
+			3: '0.75rem', 
+			3.5: '0.875rem', 
 			4: '1rem',
 			5: '1.25rem',
 			6: '1.5rem',
@@ -136,11 +141,9 @@ const config = {
 			100: '25rem',
 			112: '28rem',
 			118: '29.5rem',
-			118: '29.5rem',
 			135: '33.75rem',
 			142: '35.5rem',
 			150: '37.5rem',
-			166: '41.75rem',
 			166: '41.75rem',
 			200: '50rem'
 		},
@@ -233,10 +236,10 @@ const config = {
 			md: '0.375rem',
 			lg: '0.5rem',
 			xl: '0.75rem',
-			'2xl': '0.875rem',
+			'2xl': '1.0rem',
 			'3xl': '1.25rem',
-			'4xl': '2.5rem',
-			'5xl': '3.75rem',
+			'4xl': '1.5rem',
+			'5xl': '2.0rem',
 			full: '9999px'
 		},
 		borderWidth: {
@@ -266,7 +269,7 @@ const config = {
 			150: '1.5',
 			200: '2'
 		},
-		container: {},
+		container: {width: '100%'},
 		cursor: {
 			auto: 'auto',
 			DEFAULT: 'default',
@@ -336,24 +339,24 @@ const config = {
 			mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
 		},
 		fontSize: {
-			xs: ['0.75rem', { lineHeight: '1' }],
-			sm: ['0.875rem', { lineHeight: '1' }],
-			base: ['1rem', { lineHeight: '1' }],
-			lg: ['1.125rem', { lineHeight: '1.3' }],
-			xl: ['1.25rem', { lineHeight: '1.3' }],
-			'2xl': ['1.625rem', { lineHeight: '1.3' }],
-			'3xl': ['2rem', { lineHeight: '1.3' }],
-			'4xl': ['2.625rem', { lineHeight: '1' }],
-			'5xl': ['3rem', { lineHeight: '1' }],
-			'6xl': ['3.5rem', { lineHeight: '1' }],
-			'7xl': ['3.875rem', { lineHeight: '1' }],
-			'8xl': ['4.5rem', { lineHeight: '1' }],
-			'9xl': ['5rem', { lineHeight: '1' }],
-			'10xl': ['5.5rem', { lineHeight: '1' }],
-			'11xl': ['6rem', { lineHeight: '1' }],
-			'12xl': ['8.25rem', { lineHeight: '1' }],
-			'13xl': ['9rem', { lineHeight: '1' }],
-			'14xl': ['10rem', { lineHeight: '1' }]
+		// xs: ['0.75rem', { lineHeight: '1' }],
+		// sm: ['0.875rem', { lineHeight: '1.0rem' }],
+		// base: ['1rem', { lineHeight: '16px' }],
+		// lg: ['1.125rem', { lineHeight: '1.2rem' }],
+		// 	xl: ['1.25rem', { lineHeight: '1.3' }],
+		// '2xl': ['1.625rem', { lineHeight: '1.3' }],
+		// '3xl': ['2rem', { lineHeight: '1.3' }],
+		// '4xl': ['2.625rem', { lineHeight: '1' }],
+		// 	'5xl': ['3rem', { lineHeight: '1' }],
+		// 	'6xl': ['3.5rem', { lineHeight: '1' }],
+		// 	'7xl': ['3.875rem', { lineHeight: '1' }],
+		// 	'8xl': ['4.5rem', { lineHeight: '1' }],
+		// 	'9xl': ['5rem', { lineHeight: '1' }],
+		// '10xl': ['5.5rem', { lineHeight: '1' }],
+		// '11xl': ['6rem', { lineHeight: '1' }],
+		// 	'12xl': ['8.25rem', { lineHeight: '1' }],
+		// 	'13xl': ['9rem', { lineHeight: '1' }],
+		// 	'14xl': ['10rem', { lineHeight: '1' }]
 		},
 		fontWeight: {
 			thin: '200',
@@ -936,6 +939,7 @@ const config = {
 		flexGrow: ['responsive'],
 		flexShrink: ['responsive'],
 		flexWrap: ['responsive'],
+    fluidType: ['responsive'],
 		float: ['responsive'],
 		fontFamily: ['responsive'],
 		fontSize: ['responsive'],
@@ -1021,6 +1025,86 @@ const config = {
 	},
 	corePlugins: {},
 	plugins: [
+    require('tailwindcss-fluid-type')({
+            // your fluid type settings
+            // works only with unitless numbers
+            // This numbers are the defaults settings
+            settings: {
+                fontSizeMin: 1.125, // 1.125rem === 18px
+                fontSizeMax: 1.25, // 1.25rem === 20px
+                ratioMin: 1.125, // Multiplicator Min
+                ratioMax: 1.2, // Multiplicator Max
+                screenMin: 20, // 20rem === 320px
+                screenMax: 96, // 96rem === 1536px
+                unit: 'rem', // default is rem but it's also possible to use 'px'
+                prefix: '', // set a prefix to use it alongside the default font sizes
+                extendValues: false, // When you set extendValues to true it will extend the default values. Set it to false to overwrite the values.
+            },
+            // Creates the text-xx classes
+            // This are the default settings and analog to the tailwindcss defaults
+            // Each `lineHeight` is set unitless and we think that's the way to go especially in context with fluid type.
+            values: {
+                'xxs': [-3, 1.2],
+                'xs': [-2, 1.6],
+                'sm': [-1, 1.6],
+                'base': [0, {
+                  lineHeight: 1.6, 
+                  letterSpacing: '0rem',
+                  }],
+                'lg': [1, {
+                  lineHeight: 1.6, 
+                  letterSpacing: '0rem',
+                  }],
+                'xl': [2, {
+                  lineHeight: 1.2, 
+                  letterSpacing: '0rem',
+                  }],
+                '2xl': [3, {
+                  lineHeight: 1.2, 
+                  letterSpacing: '-0.075rem',
+                  }],
+                '3xl': [4, {
+                  lineHeight: 1.1, 
+                  letterSpacing: '-0.1rem',
+                  }],
+                '4xl': [5, {
+                  lineHeight: 1.1, 
+                  letterSpacing: '-0.1rem',
+                  }],
+                '5xl': [6, {
+                  lineHeight: 1.1, 
+                  letterSpacing: '-0.1rem',
+                  }],
+                '6xl': [7, {
+                  lineHeight: 1, 
+                  letterSpacing: '-0.1rem',
+                  }],
+                '7xl': [8, {
+                  lineHeight: 1, 
+                  letterSpacing: '-0.2rem',
+                  }],
+                '8xl': [9, {
+                  lineHeight: 1, 
+                  letterSpacing: '-0.3rem',
+                  }],
+                '9xl': [10, {
+                  lineHeight: 1, 
+                  letterSpacing: '-0.4rem',
+                  }],
+                '10xl': [11, {
+                  lineHeight: 1, 
+                  letterSpacing: '-0.5rem',
+                  }],
+                '11xl': [12, {
+                  lineHeight: 1, 
+                  letterSpacing: '-0.5rem',
+                  }],
+                '12xl': [13, {
+                  lineHeight: 1, 
+                  letterSpacing: '-0.5rem',
+                  }],
+            },
+        }),
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/forms'),
 		require('@tailwindcss/aspect-ratio'),
