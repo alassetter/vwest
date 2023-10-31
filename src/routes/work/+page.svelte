@@ -1,5 +1,6 @@
 <script>
 	const placeholder = '/images/placeholder-lg.jpg';
+	const workitem = '/images/placeholder-2.jpg';
 	import HeroAlt from '$lib/components/content/HeroAlt.svelte';
 </script>
 
@@ -131,7 +132,7 @@
 							/>
 							<img
 								class="block w-full h-80 object-cover"
-								src={placeholder}
+								src={workitem}
 								alt="name"
 							/>
 						</div>
