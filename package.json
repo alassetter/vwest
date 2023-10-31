@@ -13,15 +13,24 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-vercel": "^3.0.3",
     "@sveltejs/kit": "^1.20.4",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.14",
     "hygen": "^6.2.11",
     "postcss": "^8.4.24",
+    "postcss-import": "^15.1.0",
     "postcss-load-config": "^4.0.1",
+    "postcss-nesting": "^12.0.1",
     "prettier": "^3.0.3",
     "prettier-plugin-svelte": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
+    "schema-dts": "^1.1.2",
     "svelte": "^4.0.5",
+    "svelte-preprocess": "^5.0.4",
     "svelte-seo": "^1.5.4",
     "tailwindcss": "^3.3.2",
     "tailwindcss-fluid-type": "^2.0.3",
@@ -29,15 +38,5 @@
     "vite": "^4.4.2"
   },
   "type": "module",
-  "dependencies": {
-    "@sveltejs/adapter-vercel": "^3.0.3",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/container-queries": "^0.1.1",
-    "@tailwindcss/forms": "^0.5.6",
-    "@tailwindcss/typography": "^0.5.10",
-    "postcss-import": "^15.1.0",
-    "postcss-nesting": "^12.0.1",
-    "schema-dts": "^1.1.2",
-    "svelte-preprocess": "^5.0.4"
-  }
+  "dependencies": {}
 }
