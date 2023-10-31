@@ -188,6 +188,12 @@ const config = {
         "linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)",
       "gradient-black":
         "linear-gradient(0deg, #07070E 0%, rgba(0, 0, 0, 0) 100%)",
+      "gradient-gotham":
+        "radial-gradient(at right top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))",
+      "gradient-bluemesh":
+        "radial-gradient(at 6% 100%, rgb(55, 48, 163) 0, transparent 69%), radial-gradient(at 33% 28%, rgb(30, 58, 138) 0, transparent 58%), radial-gradient(at 34% 60%, rgb(192, 132, 252) 0, transparent 60%), radial-gradient(at 24% 81%, rgb(126, 34, 206) 0, transparent 18%), radial-gradient(at 32% 96%, rgb(124, 58, 237) 0, transparent 7%), radial-gradient(at 65% 97%, rgb(30, 64, 175) 0, transparent 76%)",
+      "gradient-night":
+        "linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))",
     },
     backgroundOpacity: (theme) => theme("opacity"),
     backgroundPosition: {
@@ -1109,6 +1115,13 @@ const config = {
           {
             lineHeight: 1.6,
             letterSpacing: "0rem",
+          },
+        ],
+        subhead: [
+          0,
+          {
+            lineHeight: 1.6,
+            letterSpacing: "0.15rem",
           },
         ],
         lg: [
