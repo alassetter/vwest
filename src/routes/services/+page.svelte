@@ -1,5 +1,5 @@
 <script>
-  import HeroAlt from '$lib/components/content/HeroAlt.svelte'
+	import HeroAlt from '$lib/components/content/HeroAlt.svelte';
 </script>
 
 <HeroAlt />
@@ -12,15 +12,19 @@
 				<div class="flex flex-wrap">
 					<!-- Content -->
 					<div class="w-full md:8/12 lg:w-9/12 xl:w-7/12 2xl:6/12">
-						<p class="mb-8 text-base font-medium uppercase">Subheadline</p>
+						<p class="mb-8 text-base font-medium uppercase">
+							Subheadline
+						</p>
 						<h1 class="mb-8 text-5xl max-w-2xl">
 							Aenean lacinia bibendum nulla sed consectetur.
 						</h1>
 						<p class="text-lg">
-							Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
-							Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus,
-							nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus
-							ac facilisis in, egestas eget quam.
+							Vestibulum id ligula porta felis euismod semper.
+							Maecenas faucibus mollis interdum. Aenean lacinia
+							bibendum nulla sed consectetur. Duis mollis, est non
+							commodo luctus, nisi erat porttitor ligula, eget lacinia
+							odio sem nec elit. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam.
 						</p>
 					</div>
 					<!-- Content -->

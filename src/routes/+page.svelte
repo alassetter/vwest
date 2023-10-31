@@ -21,7 +21,7 @@
       <div class="lg:w-1/2 xl:w-7/12">
         <div class="max-w-2xl lg:pl-12 lg:ml-auto">
           <p class="text-lg">
-            <span>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.
+    <span>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.
            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </span>
           </p>
         </div>

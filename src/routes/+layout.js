@@ -1,5 +1,5 @@
-import { error } from '@sveltejs/kit';
-import { onMount } from 'svelte';
+import { error } from "@sveltejs/kit";
+import { onMount } from "svelte";
 
 // Ensures all pages under this layout (which is all of them) are statically prerendered at build time
 export const prerender = true;
@@ -8,11 +8,11 @@ export const prerender = true;
 export const csr = true;
 
 export const load = async ({ url, fetch }) => {
-	try {
-		return {
-			path: url.pathname
-		};
-	} catch (err) {
-		throw error(500, err);
-	}
+  try {
+    return {
+      path: url.pathname,
+    };
+  } catch (err) {
+    throw error(500, err);
+  }
 };

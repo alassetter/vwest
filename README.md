@@ -3,6 +3,7 @@
 A simplish modern web stack.
 
 ## Development
+
 ### Setup
 
 0. Create a new project by going to [https://github.com/jefflombard/starter](https://github.com/jefflombard/starter) and clicking on `use this template > create new repository`.
@@ -10,14 +11,18 @@ A simplish modern web stack.
 2. `cd starter` to change your directory
 3. `yarn` to install
 4. change the project name from `starter` in `package.json` to whatever you want it.
+
 ### Stack
+
 This starter uses the following tech:
+
 - [Svelte Framework](https://svelte.dev/) for component based development.
 - [Svelte Kit](https://kit.svelte.dev/) for organization and SSR.
 - [Tailwind CSS](https://tailwindcss.com/) for styling.
 - [Hygen](https://www.hygen.io/) for templating.
 
 ### Organization
+
 The project uses SvelteKit's standard folder organization.
 
 ### Available Commands
