@@ -2,7 +2,19 @@
 	import HeroAlt from '$lib/components/content/HeroAlt.svelte';
 </script>
 
-<HeroAlt />
+<section>
+	<HeroAlt
+		backgroundColor=""
+		gradient="bg-gradient-night"
+		subhead="Services"
+		subheadColor="text-gray-300"
+		title="What we offer"
+		titleColor="text-gray-100"
+		bodyCopy="Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus."
+		bodyColor="text-gray-300"
+		altCopy="name"
+	/>
+</section>
 
 <section class="bg-gray-300">
 	<div class="pt-16 pb-16">

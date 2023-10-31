@@ -1,12 +1,47 @@
-<section class="py-12 md:py-24 bg-coolGray-50">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap -mx-4 mb-16">
-      <div class="lg:w-6/12 px-4 mb-12 lg:mb-0">
-        <h1 class="font-heading text-6xl md:text-10xl mb-8 tracking-tightest">Work</h1>
-        <p class="text-2xl tracking-tight">
-          Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        </p>
-      </div>
-    </div>
-  </div>
+<script>
+	import HeroAlt from '$lib/components/content/HeroAlt.svelte';
+</script>
+
+<section>
+	<HeroAlt
+		backgroundColor="bg-black"
+		gradient="bg-gradient-bluemesh"
+		subhead="Work"
+		subheadColor="text-gray-300"
+		title="Work"
+		titleColor="text-gray-100"
+		bodyCopy=""
+		bodyColor="text-gray-300"
+		altCopy="name"
+	/>
+</section>
+
+<section class="bg-gray-300">
+	<div class="pt-16 pb-16">
+		<!-- Global Padding -->
+		<div class="px-12">
+			<div class="w-full max-w-full mx-auto">
+				<div class="flex flex-wrap">
+					<!-- Content -->
+					<div class="w-full md:8/12 lg:w-9/12 xl:w-7/12 2xl:6/12">
+						<p class="mb-8 text-base font-medium uppercase">
+							Subheadline
+						</p>
+						<h1 class="mb-8 text-5xl max-w-2xl">
+							Aenean lacinia bibendum nulla sed consectetur.
+						</h1>
+						<p class="text-lg">
+							Vestibulum id ligula porta felis euismod semper.
+							Maecenas faucibus mollis interdum. Aenean lacinia
+							bibendum nulla sed consectetur. Duis mollis, est non
+							commodo luctus, nisi erat porttitor ligula, eget lacinia
+							odio sem nec elit. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam.
+						</p>
+					</div>
+					<!-- Content -->
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

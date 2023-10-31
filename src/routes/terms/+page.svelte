@@ -1,12 +1,44 @@
-<section class="py-12 md:py-24 bg-coolGray-50">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap -mx-4 mb-16">
-      <div class="lg:w-6/12 px-4 mb-12 lg:mb-0">
-        <h1 class="font-heading text-6xl md:text-10xl mb-8 tracking-tightest">Terms</h1>
-        <p class="text-2xl tracking-tight">
-          Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        </p>
-      </div>
-    </div>
-  </div>
+<script>
+	import HeroSolid from '$lib/components/content/HeroSolid.svelte';
+</script>
+
+<HeroSolid
+	subhead="Terms"
+	subheadColor="text-gray-500"
+	title="Terms & Conditions"
+	titleColor=""
+	bodyCopy=""
+	bodyColor=""
+	backgroundColor="bg-gray-200"
+	gradient=""
+/>
+
+<section class="bg-gray-300 text-black">
+	<div class="pt-16 pb-16">
+		<!-- Global Padding -->
+		<div class="px-12">
+			<div class="w-full max-w-full mx-auto">
+				<div class="flex flex-wrap">
+					<!-- Content -->
+					<div class="w-full md:8/12 lg:w-9/12 xl:w-7/12 2xl:6/12">
+						<p class="mb-8 text-base font-medium uppercase">
+							Subheadline
+						</p>
+						<h1 class="mb-8 text-5xl max-w-2xl">
+							Aenean lacinia bibendum nulla sed consectetur.
+						</h1>
+						<p class="text-lg">
+							Vestibulum id ligula porta felis euismod semper.
+							Maecenas faucibus mollis interdum. Aenean lacinia
+							bibendum nulla sed consectetur. Duis mollis, est non
+							commodo luctus, nisi erat porttitor ligula, eget lacinia
+							odio sem nec elit. Cras justo odio, dapibus ac facilisis
+							in, egestas eget quam.
+						</p>
+					</div>
+					<!-- Content -->
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
