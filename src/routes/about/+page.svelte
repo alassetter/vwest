@@ -1,7 +1,15 @@
 <script>
-	const placeholder = '/images/placeholder-lg.jpg';
-	const headshot = '/images/headshot.jpg';
 	import HeroSolid from '$lib/components/content/HeroSolid.svelte';
+	import GridComponent from '$lib/components/layout/Grid.svelte';
+	import Heading from '$lib/components/content/Heading.svelte';
+	import Paragraph from '$lib/components/content/Paragraph.svelte';
+	import Img from '$lib/components/content/Image.svelte';
+	import Modal from '$lib/components/content/Modal.svelte';
+	let showModal = false;
+
+	function toggleModal() {
+		showModal = !showModal;
+	}
 </script>
 
 <HeroSolid
@@ -14,6 +22,41 @@
 	backgroundColor="bg-blue-500"
 	gradient=""
 />
+
+<section class="bg-gray-10">
+	<div class="pt-24 pb-24">
+		<!-- Global Padding -->
+		<div class="px-12">
+			<GridComponent
+				gridCols="grid-cols-1 sm:grid-cols-12 md:grid-cols-12"
+				gap="gap-4"
+				padding=""
+				bgColor="bg-gray-300"
+				rounded="rounded-lg"
+				shadow="shadow-lg"
+			>
+				<div
+					class="col-span-4 sm:col-span-6 md:col-span-3 rounded bg-red-500"
+				>
+					<!-- Content for the 1/4 column -->
+					<div class="p-4 rounded-md shadow text-white">Item 1</div>
+				</div>
+				<div
+					class="col-span-4 sm:col-span-6 md:col-span-3 rounded bg-red-500"
+				>
+					<!-- Content for the 1/4 column -->
+					<div class="p-4 rounded-md shadow text-white">Item 2</div>
+				</div>
+				<div
+					class="col-span-4 sm:col-span-12 md:col-span-6 rounded shadow bg-blue-500"
+				>
+					<!-- Content for the 3/4 column -->
+					<div class="p-4 text-white">Item 3</div>
+				</div>
+			</GridComponent>
+		</div>
+	</div>
+</section>
 
 <section class="bg-gray-10">
 	<div class="pt-24 pb-24">
@@ -46,6 +89,20 @@
 						<div class="flex flex-wrap -mx-4 align-items-stretch">
 							<div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
 								<div
+									class="overflow-hidden bg-white px-4 py-5 border rounded-xl shadow-sm sm:p-6"
+								>
+									<dd
+										class="mt-24 text-8xl font-heading tracking-tight text-gray-900"
+									>
+										0%
+									</dd>
+									<dt
+										class="truncate text-sm font-medium text-gray-500"
+									>
+										Label
+									</dt>
+								</div>
+								<div
 									class="flex items-end mb-4 pl-8 pr-1 xl:pl-10 h-64 pb-10 border rounded-xl"
 								>
 									<div>
@@ -66,6 +123,7 @@
 									</div>
 								</div>
 							</div>
+							<!-- Row Two -->
 							<div class="w-full md:w-1/2 px-2">
 								<div
 									class="flex items-end mb-4 pl-8 pr-1 xl:pl-10 h-64 pb-10 border rounded-xl bg-white shadow-sm"
@@ -92,6 +150,7 @@
 									</div>
 								</div>
 							</div>
+							<!-- Row Three -->
 						</div>
 					</div>
 					<div
@@ -114,13 +173,13 @@
 	</div>
 </section>
 
-<section class="bg-gray-100">
+<section class="bg-gray-100 overflow-hidden">
 	<div class="pt-24 pb-24">
 		<!-- Global Padding -->
 		<div class="px-12">
 			<div class="flex flex-wrap -mx-4 items-center mb-20">
 				<div class="w-full lg:w-8/12 xl:w-1/2 px-4 mb-8 lg:mb-0">
-					<h1 class="font-heading text-6xl">Meet the team</h1>
+					<h1 class="font-heading text-6xl">Meet Our Team</h1>
 				</div>
 				<div class="w-full lg:w-4/12 xl:w-1/2 px-4">
 					<div class="flex items-center justify-end">
@@ -188,69 +247,110 @@
 				</div>
 			</div>
 			<div class="flex items-center">
-				<div class="flex-shrink-0 mr-8 w-full max-w-md">
-					<img
-						class="block w-full mb-8 border rounded-2xl overflow-hidden shadow-sm"
-						src={headshot}
-						alt="name"
+				<div class="shrink-0 mr-8 w-full max-w-md">
+					<Img
+						src="/images/headshot-3.jpg"
+						alt="Richard Danicic Profile Photo"
+						classes="rounded-lg shadow-md overflow-hidden shadow-sm mb-8"
 					/>
 					<div class="max-w-sm">
 						<h4 class="text-2xl font-medium">Richard Danicic</h4>
 						<span
-							class="mt-1 text-sm text-gray-600 uppercase font-medium font-spaceg"
+							class="mt-1 block text-sm text-gray-600 uppercase font-medium font-spaceg mb-4"
 							>Chief Executive Officer</span
+						>
+						<Paragraph color="text-gray-700" customSize="text-base">
+							Praesent commodo cursus magna, vel scelerisque nisl
+							consectetur et. Integer posuere erat a ante venenatis
+							dapibus posuere velit aliquet. Aenean lacinia bibendum
+							nulla sed consectetur.
+						</Paragraph>
+						<Modal
+							><p>
+								Long form Biography content would go here.
+							</p></Modal
 						>
 					</div>
 				</div>
-				<div class="flex-shrink-0 mr-8 w-full max-w-md">
-					<img
-						class="block w-full mb-8 border rounded-2xl overflow-hidden shadow-sm"
-						src={headshot}
-						alt="name"
+				<div class="shrink-0 mr-8 w-full max-w-md">
+					<Img
+						src="/images/headshot-4.jpg"
+						alt="Richard Danicic Profile Photo"
+						classes="rounded-lg shadow-md overflow-hidden shadow-sm mb-8"
 					/>
 					<div class="max-w-sm">
 						<h4 class="text-2xl font-spaceg font-medium">
 							Nebojsa Knezevic
 						</h4>
 						<span
-							class="mt-1 text-sm text-blue-500 uppercase font-medium font-spaceg"
+							class="mt-1 mb-4 block text-sm text-blue-500 uppercase font-medium font-spaceg"
 							>Chief Technical Officer</span
 						>
+						<Paragraph color="text-gray-700" customSize="text-base">
+							Praesent commodo cursus magna, vel scelerisque nisl
+							consectetur et. Integer posuere erat a ante venenatis
+							dapibus posuere velit aliquet. Aenean lacinia bibendum
+							nulla sed consectetur.
+						</Paragraph>
 					</div>
 				</div>
-				<div class="flex-shrink-0 mr-8 w-full max-w-md">
-					<img
-						class="block w-full mb-8 border rounded-2xl overflow-hidden shadow-sm"
-						src={headshot}
-						alt="name"
+				<div class="shrink-0 mr-8 w-full max-w-md">
+					<Img
+						src="/images/headshot-2.jpg"
+						alt="Richard Danicic Profile Photo"
+						classes="rounded-lg shadow-md overflow-hidden shadow-sm mb-8"
 					/>
 					<div class="max-w-sm">
 						<h4 class="text-2xl font-spaceg font-medium">
 							Filip Micic
 						</h4>
 						<span
-							class="mt-1 text-sm text-gray-600 uppercase font-medium font-spaceg"
+							class="mt-1 mb-4 block text-sm text-gray-600 uppercase font-medium font-spaceg"
 							>Head of Engineering</span
 						>
+						<Paragraph color="text-gray-700" customSize="text-base">
+							Praesent commodo cursus magna, vel scelerisque nisl
+							consectetur et. Integer posuere erat a ante venenatis
+							dapibus posuere velit aliquet. Aenean lacinia bibendum
+							nulla sed consectetur.
+						</Paragraph>
 					</div>
 				</div>
-				<div class="flex-shrink-0 mr-8 w-full max-w-md">
-					<img
-						class="block w-full mb-8 border rounded-2xl overflow-hidden shadow-sm"
-						src={headshot}
-						alt="name"
+				<div class="shrink-0 w-full max-w-md">
+					<Img
+						src="/images/headshot-5.jpg"
+						alt="Richard Danicic Profile Photo"
+						classes="rounded-lg shadow-md overflow-hidden shadow-sm mb-8"
 					/>
 					<div class="max-w-sm">
 						<h4 class="text-2xl font-spaceg font-medium">
 							Jovana Lujic
 						</h4>
 						<span
-							class="mt-1 text-sm text-gray-600 uppercase font-medium font-spaceg"
+							class="mt-1 mb-4 block text-sm text-gray-600 uppercase font-medium font-spaceg"
 							>Office & HR Operations Manager</span
 						>
+						<Paragraph color="text-gray-700" customSize="text-base">
+							Praesent commodo cursus magna, vel scelerisque nisl
+							consectetur et. Integer posuere erat a ante venenatis
+							dapibus posuere velit aliquet. Aenean lacinia bibendum
+							nulla sed consectetur.
+						</Paragraph>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+{#if showModal}
+	<Modal on:close={toggleModal}>
+		<div>
+			<p>
+				This is the content of the modal. You can place any HTML or
+				Svelte component here.
+			</p>
+			<button on:click={toggleModal}>Close</button>
+		</div>
+	</Modal>
+{/if}
