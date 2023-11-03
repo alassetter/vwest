@@ -1,18 +1,15 @@
 <script>
 	import '../app.postcss';
-  import ViewPort from '$lib/components/utility/ViewPort.svelte';
+	import ViewPort from '$lib/components/utility/ViewPort.svelte';
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import { currentPage } from '$lib/assets/js/store';
 	import { navItems } from '$lib/config';
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
-
+	import { cubicIn, cubicOut } from 'svelte/easing';
+	import { fly, fade } from 'svelte/transition';
 	export let data;
-
-	const transitionIn = { delay: 150, duration: 150 };
-	const transitionOut = { duration: 100 };
 
 	/**
 	 * Updates the global store with the current path. (Used for highlighting
@@ -37,17 +34,19 @@
 <Header />
 
 {#key data.path}
-	<main
+	<div
 		class="w-full flex-auto"
-		id="main"
-		tabindex="-1"
-		in:fade={transitionIn}
-		out:fade={transitionOut}
+		in:fly={{ easing: cubicOut, y: 5, duration: 300, delay: 400 }}
+		out:fly={{ easing: cubicIn, y: -5, duration: 300 }}
 	>
-		<div class="mx-auto">
+		<div
+			class="mx-auto"
+			in:fade={{ easing: cubicOut, duration: 400, delay: 400 }}
+			out:fade={{ easing: cubicIn, duration: 400 }}
+		>
 			<slot />
 		</div>
-	</main>
+	</div>
 	<Footer />
-  <ViewPort />
+	<ViewPort />
 {/key}
