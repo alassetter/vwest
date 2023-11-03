@@ -34,3 +34,18 @@
 		</div>
 	</div>
 </div>
+
+<!-- import HeroSolid from '$lib/components/content/HeroSolid.svelte'; -->
+
+<!-- 
+<HeroSolid
+	subhead="Subhead"
+	subheadColor="text-gray-500"
+	title="Title"
+	titleColor=""
+	bodyCopy=""
+	bodyColor=""
+	backgroundColor="bg-gray-200"
+	gradient=""
+/>
+ -->

@@ -7,8 +7,7 @@
 	export let titleColor = ''; // default to no copy
 	export let bodyCopy = 'paragraph copy';
 	export let bodyColor = ''; // default color
-	export let altCopy = 'alt text goes here'; // default color
-	const image = '/images/placeholder-lg.jpg';
+	import Img from '$lib/components/content/Image.svelte';
 </script>
 
 <div class="-mt-40 pb-4 {backgroundColor}">
@@ -35,10 +34,10 @@
 					</div>
 				</div>
 				<div class="relative mx-auto max-w-full">
-					<img
-						class="absolute w-full mx-auto left-0 top-0 rounded-xl object-cover h-64 lg:h-96"
-						src={image}
-						alt={altCopy}
+					<Img
+						alt="sample 1"
+						classes="absolute w-full mx-auto left-0 top-0 rounded-xl object-cover h-112 lg:h-196 xl:h-200 aspect-video"
+						src="/images/placeholder-lg.jpg"
 					/>
 				</div>
 			</div>
