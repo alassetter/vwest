@@ -4,7 +4,7 @@
 
 <section>
 	<HeroAlt
-		backgroundColor=""
+		backgroundColor="bg-gray-300"
 		gradient="bg-gradient-night"
 		subhead="Services"
 		subheadColor="text-gray-300"
@@ -12,12 +12,16 @@
 		titleColor="text-gray-100"
 		bodyCopy="Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus."
 		bodyColor="text-gray-300"
-		altCopy="name"
+		imagePath="/images/placeholder-2.jpg"
+		imageAlt="demo"
+		imageWidth=""
+		imageHeight="110"
+		imageClasses="absolute w-full mx-auto left-0 top-0 rounded-xl object-cover h-112 lg:h-196 xl:h-200 aspect-video"
 	/>
 </section>
 
 <section class="bg-gray-300">
-	<div class="pt-16 pb-16">
+	<div class="pt-40 md:pt-40 lg:pt-16 xl:pt-100 2xl:pt-100 pb-16">
 		<!-- Global Padding -->
 		<div class="px-12">
 			<div class="w-full max-w-full mx-auto">
