@@ -1,4 +1,4 @@
-<!-- Case Study Three Col Light -->
+<!-- Case Study Three Column Dark -->
 <script>
 	import Paragraph from '$lib/components/content/Paragraph.svelte';
 	import Heading from '$lib/components/content/Heading.svelte';
@@ -6,10 +6,11 @@
 </script>
 
 <!-- Additional Case Studies -->
-<div class="max-w-full mx-auto px-12">
+
+<div class="max-w-full mx-auto px-12 text-white">
 	<Heading
 		tag="h5"
-		customColor="text-gray-900"
+		customColor="text-gray-100/50"
 		customFontWeight="font-normal"
 		customFontSize="text-3xl"
 		addClasses="mb-12">Additional Case Studies</Heading
@@ -25,19 +26,19 @@
 				/>
 				<div class="max-w-xs">
 					<span
-						class="w-full text-sm inline-block font-subheading font-medium uppercase mb-4"
+						class="w-full text-sm text-gray-100/50 inline-block font-subheading font-medium uppercase mb-4"
 						>October 2023
 					</span>
 					<Heading
 						tag="h5"
-						customColor="text-gray-900"
+						customColor="text-white"
 						customFontWeight="font-medium"
 						customFontSize="text-xl"
-						addClasses="mb-4 line-clamp-2 group-hover:text-blue-600"
+						addClasses="mb-4 line-clamp-2 group-hover:text-white"
 						>Case Study One</Heading
 					>
 					<Paragraph
-						color="text-gray-700"
+						color="text-gray-100/60"
 						customSize="text-sm"
 						addClasses="line-clamp-3 mb-6"
 					>
@@ -46,7 +47,7 @@
 						euismod semper. Maecenas faucibus mollis interdum
 					</Paragraph>
 					<a
-						class="inline-flex leading-none font-medium text-black group-hover:text-blue-500 transition-all duration-400"
+						class="inline-flex leading-none font-medium text-gray-100/60 group-hover:text-white transition-all duration-400"
 						href="/work/casestudy/"
 					>
 						<span
@@ -93,19 +94,19 @@
 				/>
 				<div class="max-w-xs">
 					<span
-						class="w-full text-sm inline-block font-subheading font-medium uppercase mb-4"
+						class="w-full text-sm text-gray-100/50 inline-block font-subheading font-medium uppercase mb-4"
 						>October 2023
 					</span>
 					<Heading
 						tag="h5"
-						customColor="text-gray-900"
+						customColor="text-white"
 						customFontWeight="font-medium"
 						customFontSize="text-xl"
-						addClasses="mb-4 line-clamp-2 group-hover:text-blue-600"
+						addClasses="mb-4 line-clamp-2 group-hover:text-white"
 						>Case Study Two</Heading
 					>
 					<Paragraph
-						color="text-gray-700"
+						color="text-gray-100/60"
 						customSize="text-sm"
 						addClasses="line-clamp-3 mb-6"
 					>
@@ -114,8 +115,8 @@
 						euismod semper. Maecenas faucibus mollis interdum
 					</Paragraph>
 					<a
-						class="inline-flex leading-none font-medium text-black group-hover:text-blue-500 transition-all duration-400"
-						href="/work/casestudytwo/"
+						class="inline-flex leading-none font-medium text-gray-100/60 group-hover:text-white transition-all duration-400"
+						href="/work/casestudy/"
 					>
 						<span
 							class="mr-4 uppercase font-subheading text-small font-medium tracking-wider"
@@ -161,19 +162,19 @@
 				/>
 				<div class="max-w-xs">
 					<span
-						class="w-full text-sm inline-block font-subheading font-medium uppercase mb-4"
+						class="w-full text-sm text-gray-100/50 inline-block font-subheading font-medium uppercase mb-4"
 						>October 2023
 					</span>
 					<Heading
 						tag="h5"
-						customColor="text-gray-900"
+						customColor="text-white"
 						customFontWeight="font-medium"
 						customFontSize="text-xl"
-						addClasses="mb-4 line-clamp-2 group-hover:text-blue-600"
+						addClasses="mb-4 line-clamp-2 group-hover:text-white"
 						>Case Study Three</Heading
 					>
 					<Paragraph
-						color="text-gray-700"
+						color="text-gray-100/60"
 						customSize="text-sm"
 						addClasses="line-clamp-3 mb-6"
 					>
@@ -181,8 +182,9 @@
 						faucibus mollis interdum. Vestibulum id ligula porta felis
 						euismod semper. Maecenas faucibus mollis interdum
 					</Paragraph>
+
 					<a
-						class="inline-flex leading-none font-medium text-black group-hover:text-blue-500 transition-all duration-400"
+						class="inline-flex leading-none font-medium text-gray-100/60 group-hover:text-white transition-all duration-400"
 						href="/work/casestudythree/"
 					>
 						<span
