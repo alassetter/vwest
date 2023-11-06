@@ -36,7 +36,6 @@
 </div>
 
 <!-- import HeroSolid from '$lib/components/content/HeroSolid.svelte'; -->
-
 <!-- 
 <HeroSolid
 	subhead="Subhead"
