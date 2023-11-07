@@ -5,6 +5,8 @@
 	import Heading from '$lib/components/element/Heading.svelte';
 	import Paragraph from '$lib/components/content/Paragraph.svelte';
 	import Img from '$lib/components/content/Image.svelte';
+	import CaseStudyThreeColDark from '$lib/components/content/casestudy/CaseStudyThreeColDark.svelte';
+	import TestimonialTwo from '$lib/components/content/testimonials/TestimonialTwo.svelte';
 	import GridComponent from '$lib/components/layout/Grid.svelte';
 </script>
 
@@ -167,4 +169,16 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+<!-- Testimonials -->
+<section class="relative p-12 bg-gray-700 overflow-hidden">
+	<div class="bg-gray-200 rounded-5xl">
+		<TestimonialTwo />
+	</div>
+</section>
+
+<!-- Additional Case Studies -->
+<section class="pt-16 md:pt-24 bg-gray-800 overflow-hidden">
+	<CaseStudyThreeColDark />
 </section>

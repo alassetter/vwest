@@ -397,7 +397,7 @@
 
 <div class="w-full lg:w-7/12 px-4">
 	<div
-		class="flex flex-col xs:flex-row mb-10 items-center justify-end"
+		class="flex flex-col xs:flex-row mt-10 mb-10 items-center justify-end"
 	>
 		<div class="inline-flex items-center">
 			<span
@@ -462,7 +462,7 @@
 						<h1
 							class="font-heading text-6xl sm:text-8xl lg:text-10xl tracking-tighter"
 						>
-							Premium Membership
+							Case Studies
 						</h1>
 					</div>
 					<div class="w-full lg:w-7/12 px-4">
