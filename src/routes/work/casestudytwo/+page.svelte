@@ -3,9 +3,6 @@
 	import Heading from '$lib/components/element/Heading.svelte';
 	import Text from '$lib/components/element/Text.svelte';
 	import SubHead from '$lib/components/element/SubHead.svelte';
-
-	import GridComponent from '$lib/components/layout/Grid.svelte';
-	import SubHeading from '$lib/components/content/Subheading.svelte';
 	import Img from '$lib/components/content/Image.svelte';
 	import HeroSolid from '$lib/components/content/HeroSolid.svelte';
 	import CaseStudyThreeColLight from '$lib/components/content/casestudy/CaseStudyThreeColLight.svelte';
