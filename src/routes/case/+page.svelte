@@ -26,7 +26,7 @@
 	classes="mb-16"
 />
 
-<!-- Feature Image -->
+<!-- Nav Bar -->
 <section>
 	<div class="-mt-28">
 		<!-- Global Padding -->
