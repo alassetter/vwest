@@ -2,6 +2,7 @@
 <!-- import Link from '$lib/components/element/Link.svelte'; -->
 <script>
 	export let asChild = false;
+	export let font = ''; // Tailwind class for font family, e.g., 'font-sans'
 	export let size = ''; // Tailwind class for font size, e.g., 'text-lg'
 	export let weight = ''; // Tailwind class for font weight, e.g., 'font-bold'
 	export let color = ''; // Tailwind class for text color, e.g., 'text-blue-600'
@@ -15,7 +16,7 @@
 	<svelte:element
 		this="a"
 		{href}
-		class={`${size} ${weight} ${color} transition-all decoration-blue-200 decoration-2 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 underline underline-offset-2 hover:decoration-blue-600 duration-200`}
+		class={`${font} ${size} ${weight} ${color} transition-all decoration-blue-200 decoration-2 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 underline underline-offset-2 hover:decoration-blue-600 duration-200`}
 		aria-label={ariaLabel || text}
 		{target}
 	>
@@ -24,7 +25,7 @@
 {:else}
 	<a
 		{href}
-		class={`${size} ${weight} ${color} transition-all decoration-blue-200 decoration-2 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 underline underline-offset-2 hover:decoration-blue-600 duration-200`}
+		class={`${font} ${size} ${weight} ${color} transition-all decoration-blue-200 decoration-2 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 underline underline-offset-2 hover:decoration-blue-600 duration-200`}
 		aria-label={ariaLabel || text}
 		{target}
 	>

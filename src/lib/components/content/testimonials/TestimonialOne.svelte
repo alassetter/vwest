@@ -1,54 +1,66 @@
 <script>
-	import Paragraph from '$lib/components/content/Paragraph.svelte';
-	import Heading from '$lib/components/content/Heading.svelte';
-	import SubHeading from '$lib/components/content/Subheading.svelte';
+	import Heading from '$lib/components/element/Heading.svelte';
+	import Text from '$lib/components/element/Text.svelte';
+	import SubHead from '$lib/components/element/SubHead.svelte';
 	import Img from '$lib/components/content/Image.svelte';
 </script>
-<div>
-	<div class="w-full mx-auto px-12">
-    <SubHeading
-    tag="h4"
-    customColor="text-gray-400"
-    customSize="text-subhead"
-    customFontFamily="font-subheading"
-    customFontWeight="font-medium"
-    customTextDecoration="uppercase"
-    addClasses="block mb-4"
-    >Testimonials
-  </SubHeading>
-  <Heading
-    tag="h3"
-    customColor="text-gray-900"
-    customFontWeight="font-normal"
-    customFontSize="text-4xl"
-    addClasses="mb-20"
-    >What our clients have to say.</Heading
-  >
 
+<div>
+	<div class="w-full mx-auto p-16">
+		<SubHead
+			asChild="false;"
+			as="h5"
+			fontfamily="font-subheading"
+			size="text-subhead"
+			weight="font-semibold"
+			color="text-gray-600"
+			classes="block mb-4 uppercase"
+		>
+			Testimonials
+		</SubHead>
+		<Heading
+			asChild="false;"
+			as="h3"
+			fontfamily="font-heading"
+			size="text-4xl"
+			weight="font-normal"
+			classes="mb-8"
+		>
+			Don't just take our word for it...
+		</Heading>
 		<div>
-    <Paragraph
-    fontFamily="font-heading"
-    color="text-gray-800"
-    customSize="text-2xl"
-    addClasses="mb-10 max-w-5xl"
-    >
-    “Vortex West is composed of a team of <span class="italic text-blue-600"
-					>talented engineers</span>  with a passion for excellence. They are sharply focused on our business needs and understand our continually evolving preferences within our industry."
-    </Paragraph>
+			<Text
+				asChild="false"
+				as="p"
+				fontFamily="font-heading"
+				size="text-2xl"
+				color="text-gray-800"
+				margin="mb-10"
+				classes="max-w-5xl"
+			>
+				“Vortex West is composed of a team of <span
+					class="italic text-blue-600">talented engineers</span
+				> with a passion for excellence. They are sharply focused on our
+				business needs and understand our continually evolving preferences
+				within our industry."
+			</Text>
 
 			<div class="sm:flex items-center justify-between">
-				<div class="flex mb-10 sm:mb-0 items-center">
+				<div class="flex mb-10 items-center xs:block sm:inline-flex">
 					<Img
 						src="/images/planned-parenthood-icon.svg"
 						alt="sample 1"
-						classes="mr-8 h-24 block rounded-2xl object-cover"
+						classes="mr-8 h-24 xs:h-16 block rounded-2xl object-cover"
 					/>
 					<div>
-						<span class="block font-heading text-lg">Ron Rodenberg</span>
+						<span
+							class="block font-heading text-lg mt:0 xs:mt-8 md:mt-0"
+							>Ron Rodenberg</span
+						>
 						<span class="block text-xs text-gray-600"
 							>Director Of Development</span
 						>
-            <span class="block text-xs text-gray-600"
+						<span class="block text-xs text-gray-600"
 							>Planned Parenthood</span
 						>
 					</div>
@@ -117,5 +129,3 @@
 		</div>
 	</div>
 </div>
-
-

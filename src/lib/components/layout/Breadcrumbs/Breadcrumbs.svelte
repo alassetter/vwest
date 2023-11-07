@@ -9,13 +9,13 @@
 	export let fontFamily = '';
 	export let fontWeight = '';
 	export let textDecoration = '';
-	export let addClasses = '';
+	export let classes = '';
 	export let items = [];
 </script>
 
 <section>
 	<div
-		class={`${bgColor} ${textColor} ${borderColor} ${border} ${padding} ${fontFamily} ${fontWeight} ${textDecoration} ${addClasses}`}
+		class={`${bgColor} ${textColor} ${borderColor} ${border} ${padding} ${fontFamily} ${fontWeight} ${textDecoration} ${classes}`}
 	>
 		<nav aria-label="breadcrumb" class="text-sm w-full mx-auto px-12">
 			<ol class="list-reset flex">

@@ -1,10 +1,10 @@
 <script>
 	// Props with default values
 	export let tag = 'h1';
-	export let customColor = 'text-gray-600';
-	export let customFontSize = 'text-4xl';
-	export let customFontFamily = 'font-heading';
-	export let customFontWeight = 'font-medium';
+	export let customColor = ' ';
+	export let customFontSize = ' ';
+	export let customFontFamily = ' ';
+	export let customFontWeight = ' ';
 	export let customTextDecoration = '';
 	export let addClasses = ''; // Prop for any additional classes
 

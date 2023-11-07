@@ -1,7 +1,6 @@
 <script>
 	const placeholder = '/images/placeholder-lg.jpg';
 	import Hero from '$lib/components/content/Hero.svelte';
-	import ThreeColIconCard from '$lib/components/content/cards/ThreeColIconCard.svelte';
 	import Container from '$lib/components/layout/Container.svelte';
 </script>
 
@@ -34,6 +33,67 @@
 									consectetur et.
 								</span>
 							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Two Column -->
+<section class="bg-gray-500">
+	<div class="pt-16 pb-16">
+		<!-- Global Padding -->
+		<div class="px-12">
+			<div class="w-full max-w-full mx-auto">
+				<span
+					class="inline-block mb-8 font-heading text-base font-medium uppercase"
+					>Two Column</span
+				>
+				<div class="flex flex-wrap">
+					<div class="lg:w-1/2 xl:w-5/12 mb-4 lg:mb-0">
+						<h2 class="col-span-8 font-heading text-4xl">
+							Morbi leo risus, porta ac consectetur ac, vestibulum
+							eros.
+						</h2>
+					</div>
+					<div class="lg:w-1/2 xl:w-7/12">
+						<div class="max-w-2xl lg:pl-12 lg:ml-auto text-right">
+							<a
+								class="group inline-flex py-4 px-6 items-center justify-center font-subheading uppercase tracking-widest leading-none font-medium text-white mt-8 mb-8 hover:text-black border border-white rounded-full hover:bg-white transition duration-200"
+								href="/"
+							>
+								<span class="mr-4">Button</span>
+								<span
+									class="group-hover:rotate-45 transform transition duration-100"
+								>
+									<svg
+										width="10"
+										height="10"
+										viewbox="0 0 10 10"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M9 1L1 9"
+											stroke="currentColor"
+											stroke-width="1.3"
+											stroke-miterlimit="10"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M9 8.33571V1H1.66429"
+											stroke="currentColor"
+											stroke-width="1.3"
+											stroke-miterlimit="10"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -259,161 +319,6 @@
 	</div>
 </section>
 
-<!-- Three Columns - Text -->
-<section class="bg-gray-100">
-	<div class="pt-16 pb-16">
-		<div class="px-12">
-			<div class="max-w-md mx-auto lg:max-w-none">
-				<div class="flex flex-wrap">
-					<div class="w-full lg:w-1/3 px-3 mb-6 lg:mb-0">
-						<a
-							class="relative group block h-full w-full px-14 py-14 bg-white hover:bg-black border rounded-2xl shadow-sm transition-all ease-in-out duration-400"
-							href="/"
-						>
-							<span
-								class="hidden group-hover:block absolute top-0 right-0 mt-16 mr-16"
-							>
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M22 2L2 22"
-										stroke="white"
-										stroke-width="3.25"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-									<path
-										d="M22 20.3393V2H3.66071"
-										stroke="white"
-										stroke-width="3.25"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								</svg>
-							</span>
-							<div>
-								<div class="max-w-xs">
-									<h5
-										class="pt-4 font-heading text-3xl group-hover:text-white mb-6"
-									>
-										Tellus Ipsum Tristique
-									</h5>
-								</div>
-								<p class="group-hover:text-white">
-									Etiam porta sem malesuada magna mollis euismod.
-									Maecenas sed diam eget risus varius blandit sit amet
-									non magna. Donec sed odio dui.
-								</p>
-							</div>
-						</a>
-					</div>
-					<div class="w-full lg:w-1/3 px-3 mb-6 lg:mb-0">
-						<a
-							class="relative group block h-full w-full px-9 py-14 bg-white hover:bg-black border rounded-2xl transition duration-300"
-							href="/"
-						>
-							<span
-								class="hidden group-hover:block absolute top-0 right-0 mt-16 mr-8"
-							>
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M22 2L2 22"
-										stroke="white"
-										stroke-width="3.25"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-									<path
-										d="M22 20.3393V2H3.66071"
-										stroke="white"
-										stroke-width="3.25"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								</svg>
-							</span>
-							<div>
-								<div class="max-w-xs pr-10">
-									<h5 class="text-3xl group-hover:text-white mb-6">
-										Magna Vehicula
-									</h5>
-								</div>
-								<p class="group-hover:text-white">
-									Etiam porta sem malesuada magna mollis euismod.
-									Maecenas sed diam eget risus varius blandit sit amet
-									non magna. Donec sed odio dui.
-								</p>
-							</div>
-						</a>
-					</div>
-					<div class="w-full lg:w-1/3 px-3">
-						<a
-							class="relative group block h-full w-full px-9 py-14 bg-white hover:bg-black border rounded-4xl transition duration-300"
-							href="/"
-						>
-							<span
-								class="hidden group-hover:block absolute top-0 right-0 mt-16 mr-8"
-							>
-								<svg
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M22 2L2 22"
-										stroke="white"
-										stroke-width="3.25"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-									<path
-										d="M22 20.3393V2H3.66071"
-										stroke="white"
-										stroke-width="3.25"
-										stroke-miterlimit="10"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								</svg>
-							</span>
-							<div>
-								<div class="max-w-xs pr-10">
-									<h5 class="text-3xl group-hover:text-white mb-6">
-										Mollis Euismod
-									</h5>
-								</div>
-								<p class="group-hover:text-white">
-									Etiam porta sem malesuada magna mollis euismod.
-									Maecenas sed diam eget risus varius blandit sit amet
-									non magna. Donec sed odio dui.
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- Container Test -->
 <Container bgColor="bg-gray-900" containerId="containerTest">
 	<div
@@ -436,78 +341,3 @@
 		</p>
 	</div>
 </Container>
-
-<!-- Two Columns - Text and photo and aspect ratio -->
-<section class=" bg-coolGray-50">
-	<div class="pt-16 pb-16">
-		<div class="px-12">
-			<div class="w-full mx-auto">
-				<div class="flex flex-wrap items-center">
-					<div class="w-full lg:w-1/2 mb-16 lg:mb-0">
-						<div class="lg:pr-16 xl:pr-20 2xl:pr-32 font-spaceg">
-							<p
-								class="mb-8 font-subhead text-subhead font-medium uppercase"
-							>
-								Two Column w/ Image
-							</p>
-							<h3 class="mb-8 font-heading font-medium text-4xl">
-								Aenean lacinia bibendum nulla sed consectetur.
-							</h3>
-							<p class="text-base mb-10">
-								Praesent commodo cursus magna, vel scelerisque nisl
-								consectetur et. Cras justo odio, dapibus ac facilisis
-								in, egestas eget quam. Aenean eu leo quam.
-								Pellentesque ornare sem lacinia quam venenatis
-								vestibulum. Etiam porta sem malesuada magna mollis
-								euismod.
-							</p>
-							<a
-								class="group inline-flex items-center font-medium hover:text-blue-500"
-								href="/"
-							>
-								<span class="mr-4 uppercase">See more</span>
-								<span
-									class="group-hover:rotate-45 transform transition duration-100"
-								>
-									<svg
-										width="11"
-										height="11"
-										viewBox="0 0 11 11"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M9.5 1.5L1.5 9.5"
-											stroke="black"
-											stroke-width="1.3"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-										<path
-											d="M9.5 8.83571V1.5H2.16429"
-											stroke="black"
-											stroke-width="1.3"
-											stroke-miterlimit="10"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-									</svg>
-								</span>
-							</a>
-						</div>
-					</div>
-					<div class="w-full lg:w-1/2">
-						<img
-							class="block lg:ml-auto border rounded-2xl aspect-[4/3]"
-							src={placeholder}
-							alt="placeholder"
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<ThreeColIconCard />
