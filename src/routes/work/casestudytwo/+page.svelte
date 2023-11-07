@@ -216,8 +216,13 @@
 									<!-- Industry -->
 									<div class="mb-4">
 										<dt>
-											<SubHeading customColor="text-gray-400"
-												>Industry</SubHeading
+											<SubHead
+												asChild="false;"
+												as="h4"
+												fontfamily="font-subheading"
+												size="text-subhead"
+												color="text-gray-400"
+												classes="uppercase mt-4">Industry</SubHead
 											>
 										</dt>
 										<dd
@@ -229,8 +234,13 @@
 									<!-- Services -->
 									<div class="mt-8">
 										<dt>
-											<SubHeading customColor="text-gray-400"
-												>Services</SubHeading
+											<SubHead
+												asChild="false;"
+												as="h4"
+												fontfamily="font-subheading"
+												size="text-subhead"
+												color="text-gray-400"
+												classes="uppercase">Services</SubHead
 											>
 										</dt>
 										<dd
@@ -244,8 +254,13 @@
 										<dt
 											class="text-sm font-medium text-gray-500 uppercase"
 										>
-											<SubHeading customColor="text-gray-400"
-												>Tech Stack</SubHeading
+											<SubHead
+												asChild="false;"
+												as="h4"
+												fontfamily="font-subheading"
+												size="text-subhead"
+												color="text-gray-400"
+												classes="uppercase">Tech Stack</SubHead
 											>
 										</dt>
 										<dd
