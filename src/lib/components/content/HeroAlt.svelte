@@ -8,14 +8,12 @@
 	export let bodyCopy = ' ';
 	export let bodyColor = 'text-gray-800'; // default color
 	export let image = '/images/placeholder-lg.jpg';
+	export let imageAlt = ' ';
 	export let classes =
 		'absolute w-full mx-auto left-0 top-0 rounded-xl object-cover h-112 lg:h-196 xl:h-200 aspect-video';
 </script>
 
-<div
-	style="background-color: #3531A6;"
-	class={`-mt-40 pb-4 ${backgroundColor}`}
->
+<div class={`-mt-40 pb-4 ${backgroundColor}`}>
 	<div class={gradient}>
 		<div class="w-full max-w-full mx-auto px-10 pt-40">
 			<div
@@ -39,7 +37,7 @@
 					</div>
 				</div>
 				<div class="relative mx-auto max-w-full">
-					<img alt="sample 1" class={classes} src={image} />
+					<img alt="{imageAlt}}" class={classes} src={image} />
 				</div>
 			</div>
 		</div>
