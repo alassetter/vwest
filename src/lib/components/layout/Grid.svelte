@@ -1,8 +1,10 @@
+<!-- import GridComponent from '$lib/components/layout/Grid.svelte'; -->
+
 <script>
 	// Props with default values
 	export let gridCols = 'grid-cols-1'; // Default to one column
 	export let gap = 'gap-4'; // Default gap
-	export let padding = 'p-4'; // Default padding
+	export let padding = ' '; // Default padding
 	export let bgColor = ''; // Default background color none
 	export let rounded = ''; // Default None
 	export let shadow = ''; // Default None
